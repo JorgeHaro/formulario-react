@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Boton from './componentes/Boton';
+import Campo from './componentes/Campo';
+import Titulo from './componentes/Titulo';
 
 function App() {
+  const [formulario, setFormulario] = useState({
+    nombres: '',
+    apellidos: '',
+    tipoDocumento: '',
+    nroDocumento: '',
+    telefono: '',
+    correo: ''
+  });
+
+  const handleChange = (campo, valor) => {
+    setFormulario({ ...formulario, [campo]: valor });
+  };
+
+  const handleSubmit = () => {
+    console.log(formulario);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Titulo label="Formulario en React 2025" />
+      <Campo label="Nombres" onChange={(valor) => handleChange('nombres', valor)} />
+      <Campo label="Apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
+      <Campo label="Tipo de Documento" onChange={(valor) => handleChange('tipoDocumento', valor)} />
+      <Campo label="Nro. de Documento" onChange={(valor) => handleChange('nroDocumento', valor)} />
+      <Campo label="Nro. teléfono" onChange={(valor) => handleChange('telefono', valor)} />
+      <Campo label="Correo electrónico" onChange={(valor) => handleChange('correo', valor)} />
+      <Boton texto="Enviar" onClick = {handleSubmit} />
     </div>
   );
 }
 
 export default App;
+
