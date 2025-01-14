@@ -19,8 +19,8 @@ function App() {
   };
 
   const handleSubmit = () => {
-    console.log(formulario);
-  };
+    console.log(JSON.stringify(formulario, null, 2));
+  };  
 
   return (
     <div className="App">
