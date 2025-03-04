@@ -24,14 +24,14 @@ function App() {
 
   return (
     <div className="App">
-      <Titulo label="Formulario en React 2025" />
+      <Titulo label="Formulario en React 2026" />
       <Campo label="Nombres" onChange={(valor) => handleChange('nombres', valor)} />
       <Campo label="Apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
       <Campo label="Tipo de Documento" onChange={(valor) => handleChange('tipoDocumento', valor)} />
       <Campo label="Nro. de Documento" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. teléfono" onChange={(valor) => handleChange('telefono', valor)} />
       <Campo label="Correo electrónico" onChange={(valor) => handleChange('correo', valor)} />
-      <Boton texto="Registrar" onClick = {handleSubmit} />
+      <Boton texto="Enviar Ya" onClick = {handleSubmit} />
     </div>
   );
 }
