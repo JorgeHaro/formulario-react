@@ -31,7 +31,7 @@ function App() {
       <Campo label="Nro. de Documento" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. teléfono" onChange={(valor) => handleChange('telefono', valor)} />
       <Campo label="Correo electrónico" onChange={(valor) => handleChange('correo', valor)} />
-      <Boton texto="Enviar" onClick = {handleSubmit} />
+      <Boton texto="Registrar" onClick = {handleSubmit} />
     </div>
   );
 }
