@@ -25,9 +25,9 @@ function App() {
   return (
     <div className="App">
       <Titulo label="Formulario en React 2027" />
-      <Campo label="Nome" onChange={(valor) => handleChange('nombres', valor)} />
-      <Campo label="Cognome" onChange={(valor) => handleChange('apellidos', valor)} />
-      <Campo label="Tipo de Documento" onChange={(valor) => handleChange('tipoDocumento', valor)} />
+      <Campo label="Name" onChange={(valor) => handleChange('nombres', valor)} />
+      <Campo label="Apell" onChange={(valor) => handleChange('apellidos', valor)} />
+      <Campo label="Tipo de docs" onChange={(valor) => handleChange('tipoDocumento', valor)} />
       <Campo label="Nro. de Documento" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. teléfono" onChange={(valor) => handleChange('telefono', valor)} />
       <Campo label="Correo email" onChange={(valor) => handleChange('correo', valor)} />
