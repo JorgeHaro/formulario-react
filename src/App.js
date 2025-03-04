@@ -24,14 +24,14 @@ function App() {
 
   return (
     <div className="App">
-      <Titulo label="Formulario en React 2014" />
+      <Titulo label="Formulario en React 2016" />
       <Campo label="Name" onChange={(valor) => handleChange('nombres', valor)} />
       <Campo label="Apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
       <Campo label="Tipo de docUMNE" onChange={(valor) => handleChange('tipoDocumento', valor)} />
       <Campo label="Nro. de Documento" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. celular" onChange={(valor) => handleChange('telefono', valor)} />
       <Campo label="Correo email" onChange={(valor) => handleChange('correo', valor)} />
-      <Boton texto="Enviar ya" onClick = {handleSubmit} />
+      <Boton texto="Enviar ahora" onClick = {handleSubmit} />
     </div>
   );
 }
