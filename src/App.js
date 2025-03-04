@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <Titulo label="formularia de en React 1025" />
       <Campo label="nombre genericaa" onChange={(valor) => handleChange('nombres', valor)} />
-      <Campo label="apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
+      <Campo label="surnem" onChange={(valor) => handleChange('apellidos', valor)} />
       <Campo label="Tipo de docs" onChange={(valor) => handleChange('tipoDocumento', valor)} />
       <Campo label="Nro. de docmentosss" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. celular" onChange={(valor) => handleChange('telefono', valor)} />
