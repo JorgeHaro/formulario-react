@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Titulo label="Formulario en React 2016" />
+      <Titulo label="Formulario en React 2045" />
       <Campo label="Nombress" onChange={(valor) => handleChange('nombres', valor)} />
       <Campo label="Apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
       <Campo label="Tipo de docUMNE" onChange={(valor) => handleChange('tipoDocumento', valor)} />
