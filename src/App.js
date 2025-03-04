@@ -30,7 +30,7 @@ function App() {
       <Campo label="Tipo de Documento" onChange={(valor) => handleChange('tipoDocumento', valor)} />
       <Campo label="Nro. de Documento" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. teléfono" onChange={(valor) => handleChange('telefono', valor)} />
-      <Campo label="Correo electrónico" onChange={(valor) => handleChange('correo', valor)} />
+      <Campo label="Correo email" onChange={(valor) => handleChange('correo', valor)} />
       <Boton texto="Enviar ya" onClick = {handleSubmit} />
     </div>
   );
