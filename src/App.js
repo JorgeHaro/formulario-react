@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Titulo label="formularia de en React 2029" />
+      <Titulo label="formularia de en React 1025" />
       <Campo label="nombre generico" onChange={(valor) => handleChange('nombres', valor)} />
       <Campo label="apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
       <Campo label="Tipo de documento" onChange={(valor) => handleChange('tipoDocumento', valor)} />
