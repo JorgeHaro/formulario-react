@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <Titulo label="formularios de en React 2029" />
       <Campo label="nombreeessdcsceddce" onChange={(valor) => handleChange('nombres', valor)} />
-      <Campo label="cognome" onChange={(valor) => handleChange('apellidos', valor)} />
+      <Campo label="apellidos" onChange={(valor) => handleChange('apellidos', valor)} />
       <Campo label="Tipo de documento" onChange={(valor) => handleChange('tipoDocumento', valor)} />
       <Campo label="Nro. de docmentosss" onChange={(valor) => handleChange('nroDocumento', valor)} />
       <Campo label="Nro. celular" onChange={(valor) => handleChange('telefono', valor)} />
